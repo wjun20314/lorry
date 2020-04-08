@@ -1,0 +1,68 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 3
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-item>
+        <ion-avatar class="avatars" (click)="presentActionSheet()">
+          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+        </ion-avatar>
+      </ion-item>
+
+      <ion-card-content>
+        <ion-card-title>
+          <div class="ion-text-center">Wei Chun</div>
+        </ion-card-title>
+        <ion-card-subtitle>
+          <div class="ion-text-center">Administration</div>
+        </ion-card-subtitle>
+        
+        <ion-button fill="outline" class="content-center">Sign Out</ion-button>
+      </ion-card-content>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-list>
+    <ion-item>
+      <ion-icon name="settings-outline" slot="start"></ion-icon>
+      <ion-label>Settings</ion-label>
+      <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
+    </ion-item>
+    <ion-item routerLink="/profile">
+      <ion-icon name="person-outline" slot="start"></ion-icon>
+      <ion-label>Edit Profile</ion-label>
+      <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
+    </ion-item>
+    <ion-item routerLink="/chgpwd">
+      <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+      <ion-label>Change Password</ion-label>
+      <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
+    </ion-item>
+    <ion-item routerLink="/chgemail">
+      <ion-icon name="mail-outline" slot="start"></ion-icon>
+      <ion-label>Change Email</ion-label>
+      <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
+    </ion-item>
+    <ion-item routerLink="/report">
+      <ion-icon name="newspaper-outline" slot="start"></ion-icon>
+      <ion-label>Report</ion-label>
+      <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
+    </ion-item>
+    <ion-item routerLink="/termuse">
+      <ion-icon name="book-outline" slot="start"></ion-icon>
+      <ion-label>Terms of Use</ion-label>
+      <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
+    </ion-item>
+    <ion-item routerLink="/privacypolicy">
+      <ion-icon name="information-circle-outline" slot="start"></ion-icon>
+      <ion-label>Privacy Policy</ion-label>
+      <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
+    </ion-item>
+  </ion-list>
+</ion-content>

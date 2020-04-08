@@ -1,0 +1,191 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+
+<ion-content fullscreen="true" color="secondary">
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button [routerLink]="['/order']">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-card>
+    <mat-form-field>
+      <mat-label>Task</mat-label>
+      <mat-select class="title-center">
+        <mat-option value="all">All</mat-option>
+        <mat-option value="active">Active</mat-option>
+        <mat-option value="complete">Complete</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <!-- <ion-card-header> -->
+      <!-- <ion-item>
+        <ion-select interface="actionsheet" placeholder="Select one">
+          <ion-select-option value="all">All Task</ion-select-option>
+          <ion-select-option value="active">Active Task</ion-select-option>
+          <ion-select-option value="complete">Complete Task</ion-select-option>
+        </ion-select>
+
+        
+      </ion-item> -->
+      
+
+      <ion-card-content>
+        
+
+        <ion-list>
+          <ion-item-sliding>
+            <ion-item routerLink="/order">
+              <ion-label>
+                <h1>Shah Alam</h1>
+                <p>Furniture delivery</p>
+              </ion-label>
+            </ion-item>
+            <ion-item-options side="end">
+              <ion-item-option (click)="unread(item)">Done</ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
+        
+          <ion-item-sliding>
+            <ion-item>
+              <ion-label>
+                <h1>Melacca</h1>
+                <p>Goods delivery</p>
+              </ion-label>
+            </ion-item>
+            <ion-item-options side="end">
+              <ion-item-option (click)="unread(item)">Done</ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
+
+          <ion-item-sliding>
+            <ion-item>
+              <ion-label>
+                <h1>Melacca</h1>
+                <p>Goods delivery</p>
+              </ion-label>
+            </ion-item>
+            <ion-item-options side="end">
+              <ion-item-option (click)="unread(item)">Done</ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
+
+          <ion-item-sliding>
+            <ion-item>
+              <ion-label>
+                <h1>Melacca</h1>
+                <p>Goods delivery</p>
+              </ion-label>
+            </ion-item>
+            <ion-item-options side="end">
+              <ion-item-option (click)="unread(item)">Done</ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding> 
+
+          <!-- <ion-item-sliding>
+            <ion-item>
+              <ion-label>
+                <h1>Melacca</h1>
+                <p>Goods delivery</p>
+              </ion-label>
+            </ion-item>
+            <ion-item-options side="end">
+              <ion-item-option (click)="unread(item)">Done</ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
+
+          <ion-item-sliding>
+            <ion-item>
+              <ion-label>
+                <h1>Melacca</h1>
+                <p>Goods delivery</p>
+              </ion-label>
+            </ion-item>
+            <ion-item-options side="end">
+              <ion-item-option (click)="unread(item)">Done</ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
+
+          <ion-item-sliding>
+            <ion-item>
+              <ion-label>
+                <h1>Melacca</h1>
+                <p>Goods delivery</p>
+              </ion-label>
+            </ion-item>
+            <ion-item-options side="end">
+              <ion-item-option (click)="unread(item)">Done</ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding> -->
+  
+          <ion-item-sliding>
+            <ion-item>
+              <ion-label>
+                <h1>Melacca</h1>
+                <p>Goods delivery</p>
+              </ion-label>
+            </ion-item>
+            <ion-item-options side="end">
+              <ion-item-option (click)="unread(item)">Done</ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
+  
+          <ion-item-sliding>
+            <ion-item>
+              <ion-label>
+                <h1>Melacca</h1>
+                <p>Goods delivery</p>
+              </ion-label>
+            </ion-item>
+            <ion-item-options side="end">
+              <ion-item-option (click)="unread(item)">Done</ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
+  
+          <ion-item-sliding>
+            <ion-item>
+              <ion-label>
+                <h1>Melacca</h1>
+                <p>Goods delivery</p>
+              </ion-label>
+            </ion-item>
+            <ion-item-options side="end">
+              <ion-item-option (click)="unread(item)">Done</ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
+  
+          <ion-item-sliding>
+            <ion-item>
+              <ion-label>
+                <h1>Melacca</h1>
+                <p>Goods delivery</p>
+              </ion-label>
+            </ion-item>
+            <ion-item-options side="end">
+              <ion-item-option (click)="unread(item)">Done</ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
+  
+          <ion-item-sliding>
+            <ion-item>
+              <ion-label>
+                <h1>Melacca</h1>
+                <p>Goods delivery</p>
+              </ion-label>
+            </ion-item>
+            <ion-item-options side="end">
+              <ion-item-option (click)="unread(item)">Done</ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
+        </ion-list>
+      </ion-card-content>
+      
+    <!-- </ion-card-header> -->
+  </ion-card>
+</ion-content>

@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Change Password</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<form>
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Old Password</mat-label>
+    <input matInput type="password" [type]="on ? 'text' : 'password' " [formControl]="oldpwd" required>
+    <mat-icon matSuffix (click)="on = !on" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="on">
+      {{on ? 'visibility' : 'visibility_off'}}
+    </mat-icon>
+    <mat-error *ngIf="oldpwd.invalid">{{getOldPwdErrorMsg()}}</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>New Password</mat-label>
+    <input matInput type="password" [type]="open ? 'text' : 'password' " [formControl]="newpwd" required>
+    <mat-icon matSuffix (click)="open = !open" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="open">
+      {{open ? 'visibility' : 'visibility_off'}}
+    </mat-icon>
+    <mat-error *ngIf="newpwd.invalid">{{getNewPwdErrorMsg()}}</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Confirm Password</mat-label>
+    <input matInput type="password" [type]="show ? 'text' : 'password' " [formControl]="conpwd" required>
+    <mat-icon matSuffix (click)="show = !show" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="show">
+      {{show ? 'visibility' : 'visibility_off'}}
+    </mat-icon>
+    <mat-error *ngIf="conpwd.invalid">{{getConPwdErrorMsg()}}</mat-error>
+  </mat-form-field>
+
+  <ion-button expand="block" shape="round" [disabled]="oldpwd.invalid || newpwd.invalid || conpwd.invalid" (click)="chgpwdFormSubmit()">
+    Submit
+  </ion-button>
+</form>

@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Edit Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<form>
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Name</mat-label>
+    <input matInput [formControl]="name">
+    <mat-error *ngIf="name.invalid">{{getNameErrorMsg()}}</mat-error>
+  </mat-form-field>
+
+  <mat-radio-group [formControl]="gender">
+    <mat-radio-button value="M" class="mat-radio-checked">Male</mat-radio-button>
+    <mat-radio-button value="F">Female</mat-radio-button>
+    <mat-error *ngIf="gender.invalid">{{getGenderErrorMsg()}}</mat-error>
+  </mat-radio-group>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>IC</mat-label>
+    <input matInput [formControl]="ic">
+    <mat-error *ngIf="ic.invalid">{{getIcErrorMsg()}}</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Contact No.</mat-label>
+    <input matInput [formControl]="conNo">
+    <mat-error *ngIf="conNo.invalid">{{getConNoErrorMsg()}}</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Address</mat-label>
+    <input matInput [formControl]="address">
+    <mat-error *ngIf="address.invalid">{{getAddressErrorMsg()}}</mat-error>
+  </mat-form-field>
+
+  <ion-button expand="block" shape="round" (click)="profileFormSubmit()"
+    [disabled]="name.invalid || gender.invalid || ic.invalid || conNo.invalid || address.invalid">
+    Update Profile
+  </ion-button>
+</form>

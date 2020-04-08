@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Order</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <mat-card>
+    <p>
+      <ion-label>Invoice ID: 108195743</ion-label>
+    </p>
+    <p>
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>From</mat-label>
+        <textarea matInput rows="3"></textarea>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>To</mat-label>
+        <textarea matInput rows="3"></textarea>
+      </mat-form-field>
+    </p>
+
+    <p>
+      <ion-label>Date: </ion-label>
+      <ion-datetime displayFormat="D MMM YYYY H:mm" min="1997" max="2010" value="2005-06-17T11:06Z"></ion-datetime>
+    </p>
+    <p>
+      <ion-label>Received: </ion-label>
+      <ion-datetime displayFormat="D MMM YYYY H:mm" min="1997" max="2010" value="2005-06-17T11:06Z"></ion-datetime>
+    </p>
+
+    <p>
+      <ion-label>Sender: </ion-label>
+      <input placeholder="Ronald">
+    </p>
+    <p>
+      <ion-label>Receiver: </ion-label>
+      <input placeholder="Jane">
+    </p>
+    <p>
+      <ion-label>IC: </ion-label>
+      <input placeholder="881101-08-1111">
+    </p>
+    <p>
+      <ion-label>Digital signature:</ion-label>
+    </p>
+
+    <p>
+      <ion-label>Goods: </ion-label>
+      <mat-form-field>
+        <input matInput placeholder="Furniture">
+      </mat-form-field>
+    </p>
+    <p>
+      <ion-label>Weight: </ion-label>
+      <mat-form-field>
+        <input matInput>
+        <span matSuffix>kg</span>
+      </mat-form-field>
+    </p>
+    <p>
+      <ion-label>Size: </ion-label>
+      <mat-form-field>
+        <input matInput placeholder="500x1000x1400">
+      </mat-form-field>
+    </p>
+    
+    <ion-button expand="block" shape="round" (click)="generateOrder()">Submit</ion-button>
+  </mat-card>
+</ion-content>

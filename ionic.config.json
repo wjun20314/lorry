@@ -1,0 +1,9 @@
+{
+  "name": "samlorry",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "18b70542"
+}

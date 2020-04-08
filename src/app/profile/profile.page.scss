@@ -1,0 +1,14 @@
+form {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0px 15px 50px 15px;
+}
+
+.full-width {
+  Width:100%;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
