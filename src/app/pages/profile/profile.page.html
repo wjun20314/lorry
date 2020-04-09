@@ -14,9 +14,9 @@
     <mat-error *ngIf="name.invalid">{{getNameErrorMsg()}}</mat-error>
   </mat-form-field>
 
-  <mat-radio-group [formControl]="gender">
-    <mat-radio-button value="M">Male</mat-radio-button>
-    <mat-radio-button value="F">Female</mat-radio-button>
+  <mat-radio-group [formControl]="gender" selected="Male">
+    <mat-radio-button type="radio" id="male" name="male" value="Male" [checked]="Male">Male</mat-radio-button>
+    <mat-radio-button id="female" name="female" value="Female">Female</mat-radio-button>
     <mat-error *ngIf="gender.invalid">{{getGenderErrorMsg()}}</mat-error>
   </mat-radio-group>
 
