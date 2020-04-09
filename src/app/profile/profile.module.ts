@@ -10,8 +10,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCardModule } from '@angular/material/card';
-import { MatRadioModule } from '@angular/material/radio'; 
-
+import { MatRadioModule } from '@angular/material/radio';
 
 @NgModule({
   imports: [

@@ -15,20 +15,20 @@
   </mat-form-field>
 
   <mat-radio-group [formControl]="gender">
-    <mat-radio-button value="M" class="mat-radio-checked">Male</mat-radio-button>
+    <mat-radio-button value="M">Male</mat-radio-button>
     <mat-radio-button value="F">Female</mat-radio-button>
     <mat-error *ngIf="gender.invalid">{{getGenderErrorMsg()}}</mat-error>
   </mat-radio-group>
 
   <mat-form-field appearance="outline" class="full-width">
     <mat-label>IC</mat-label>
-    <input matInput [formControl]="ic">
+    <input type="number" inputmode="numeric" matInput [formControl]="ic">
     <mat-error *ngIf="ic.invalid">{{getIcErrorMsg()}}</mat-error>
   </mat-form-field>
 
   <mat-form-field appearance="outline" class="full-width">
     <mat-label>Contact No.</mat-label>
-    <input matInput [formControl]="conNo">
+    <input type="number" inputmode="numeric" matInput [formControl]="conNo">
     <mat-error *ngIf="conNo.invalid">{{getConNoErrorMsg()}}</mat-error>
   </mat-form-field>
 
